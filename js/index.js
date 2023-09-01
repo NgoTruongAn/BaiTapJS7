@@ -75,7 +75,9 @@ function switchPT() {
 
   array[p1] = value1;
   array[p2] = value2;
-document.querySelector("#resultswitchPT").innerHTML = array;
+  document.querySelector(
+    "#resultswitchPT"
+  ).innerHTML = `Mảng sau khi đổi: ${array}`;
 }
 //Bài 7
 function sapXep() {
@@ -138,7 +140,7 @@ function soSanh() {
     }
   }
   if (count > count2) html = "Số dương > Số âm";
-  else if (count2 > count) html = "Số âm > Số dương"; 
-  else html = "Số âm = Số dương"; 
+  else if (count2 > count) html = "Số âm > Số dương";
+  else html = "Số âm = Số dương";
   document.querySelector("#resultsoSanh").innerHTML = `${html}`;
 }
